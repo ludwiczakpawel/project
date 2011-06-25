@@ -1,6 +1,6 @@
 /*=====================================================================================
-  Name:       Enderstudio
-  Started:    March 24, 2011
+  Name:       Site name
+  Started:    June 25, 2011
 =======================================================================================*/
 
 
@@ -21,7 +21,7 @@ blockquote:before, blockquote:after, q:after, q:before { content: ""; }
 /*=====================================================================================
   Basic Styles
 =======================================================================================*/
-body { background: #fff; color: #fff; font-family: "Helvetica", "Arial", sans-serif; font-size: 13px; }
+body { background: #fff; color: #444; font-family: "Helvetica", "Arial", sans-serif; font-size: 13px; }
 hr { display: none; }
 strong { font-weight: bold; }
 em { font-style: italic; }
