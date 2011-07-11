@@ -18,7 +18,6 @@ ul, ol { list-style: none; }
 table { border-spacing: 0; border-collapse: collapse; }
 caption, th { text-align: left; }
 blockquote:before, blockquote:after, q:after, q:before { content: ""; }
-button[type=submit] { cursor: pointer; }
 /*=====================================================================================
   Basic Styles
 =======================================================================================*/
@@ -83,7 +82,7 @@ p { line-height: 20px; }
 
 
 /*=====================================================================================
-  Content
+  Sidebar
 =======================================================================================*/
 
 
