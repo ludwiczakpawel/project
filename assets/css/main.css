@@ -23,15 +23,21 @@ blockquote:before, blockquote:after, q:after, q:before { content: ""; }
 =======================================================================================*/
 body { background: #fff; color: #444; font-family: "Helvetica", "Arial", sans-serif; font-size: 13px; }
 hr { display: none; }
-strong { font-weight: bold; }
+b, strong { font-weight: bold; }
 em { font-style: italic; }
 del { text-decoration: line-through; }
 address, cite, dfn { font-style: normal; }
 abbr, acronym { border-bottom: 1px dotted #999; cursor: help; }
 input, textarea, select { font-family: "Helvetica", "Arial", sans-serif; }
-a, a:visited { color: #36A2DA; text-decoration: underline; }
-a:hover, a:active { color: #DA0043; }
+label { cursor: pointer; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+img { -ms-interpolation-mode: bicubic; vertical-align: middle; }
+a, a:visited { color: #36A2DA; text-decoration: none; }
+a:hover, a:active { color: #DA0043; outline: 0; }
 p { line-height: 20px; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 /*=====================================================================================
   Accessibility
 =======================================================================================*/
@@ -39,7 +45,8 @@ p { line-height: 20px; }
 /*=====================================================================================
   Clearfix
 =======================================================================================*/
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
 
 
 
@@ -48,7 +55,7 @@ p { line-height: 20px; }
 =======================================================================================
   Layout
 =======================================================================================*/
-.container { width: 960px; margin: 0 auto; position: relative; }
+.container { width: 980px; margin: 0 auto; position: relative; }
 #header {}
 #content {}
 #sidebar {}
@@ -59,6 +66,7 @@ p { line-height: 20px; }
 /*=====================================================================================
   Header
 =======================================================================================*/
+
 
 
 /*=====================================================================================
@@ -72,6 +80,14 @@ p { line-height: 20px; }
 =======================================================================================*/
 
 
+
+/*=====================================================================================
+  Content
+=======================================================================================*/
+
+
 /*=====================================================================================
   Footer
 =======================================================================================*/
+
+
