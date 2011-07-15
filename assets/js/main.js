@@ -5,7 +5,7 @@ var Website = {
 	},
 	
 	foo: function(){
-		
+		alert("test");
 	}
 	
 }
