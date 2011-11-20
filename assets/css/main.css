@@ -1,6 +1,6 @@
 /*=====================================================================================
   Name:       Site name
-  Started:    July 28, 2011
+  Started:    November 20, 2011
 =======================================================================================*/
 
 
@@ -10,7 +10,7 @@
 =======================================================================================
   Reset
 =======================================================================================*/
-a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, date, tr, ul, var, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 a, ins, del { text-decoration: none; }
 blockquote, q { quotes:none; }
@@ -30,7 +30,7 @@ address, cite, dfn { font-style: normal; }
 abbr, acronym { border-bottom: 1px dotted #999; cursor: help; }
 input, textarea, select { font-family: "Helvetica", "Arial", sans-serif; }
 label { cursor: pointer; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button, input[type="button"], input[type="reset"], input[type="submit"], select, label[for] { cursor: pointer; -webkit-appearance: button; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 img { -ms-interpolation-mode: bicubic; vertical-align: middle; }
 a, a:visited { color: #36A2DA; text-decoration: none; }
@@ -45,8 +45,7 @@ p { line-height: 20px; }
 /*=====================================================================================
   Clearfix
 =======================================================================================*/
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size: 0; }
 
 
 

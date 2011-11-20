@@ -16,30 +16,39 @@
 	<link rel="stylesheet" media="all" href="assets/css/ie.css">
 	<![endif]-->
 </head>
-<body>
+<body class="page-home">
   
-	<nav class="accessibility">
-		<ul>
-			<li><a href="#header">Top</a></li>
-			<li><a href="#content">Content</a></li>
-			<li><a href="#footer">Footer</a></li>
-		</ul>
-	</nav><!-- / accessibility -->
+	<ul class="accessibility">
+		<li><a href="#header">Top</a></li>
+		<li><a href="#content">Content</a></li>
+		<li><a href="#footer">Footer</a></li>
+	</ul><!-- / accessibility -->
 	
-	<header id="header">
-		Hi there!
+	<header id="header" role="banner">
+		<h1>Hi there!</h1>
+		<nav role="navigation">
+			<ul>
+				<li><a href="#" class="selected">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 	</header><!-- / header -->
+	<hr>
 	
-	
-	
-	
+	<section id="content">
+		<article role="article">
+			Hello again :)
+		</article>
+	</section><!-- / content -->
+	<hr>
 	
 	<footer id="footer">
-		
+		&copy; 2011
 	</footer><!-- / footer -->
 	
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   
 </body>
